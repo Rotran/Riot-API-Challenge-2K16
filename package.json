@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Rotran/Riot-API-Challenge-2K16#readme",
   "dependencies": {
+    "express": "^4.13.4",
     "rethinkdbdash": "^2.3.4"
   }
 }
