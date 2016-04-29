@@ -1,0 +1,23 @@
+{
+  "name": "2kapichallenge",
+  "version": "1.0.0",
+  "description": "Ever wanted to find out who you most resembled in the LCS? With this app now you can!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rotran/Riot-API-Challenge-2K16.git"
+  },
+  "author": "Wesley Rogers, Max Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rotran/Riot-API-Challenge-2K16/issues"
+  },
+  "homepage": "https://github.com/Rotran/Riot-API-Challenge-2K16#readme",
+  "dependencies": {
+    "rethinkdbdash": "^2.3.4"
+  }
+}
