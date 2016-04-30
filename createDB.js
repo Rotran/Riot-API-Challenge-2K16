@@ -35,7 +35,9 @@ prompt.get(input, function (err, result) {
 
 validInputs.createDB = function (key) {
     console.log('Creating db!!');
-
+    r.db("LoL").table("Summoners").delete().run().then(function () {
+        console.log("deleted")
+    });
     r.db('LoL').table('Summoners').insert([{
             name: "Max Tran",
             id: "23456",
@@ -48,8 +50,22 @@ validInputs.createDB = function (key) {
                     points: "55",
                     highestGrade: "B",
                     id: "22"
+            },
+                {
+                    name: "Annie",
+                    level: "2",
+                    points: "22",
+                    highestGrade: "C+",
+                    id: "21"
+            },
+                {
+                    name: "Nocturne",
+                    level: "5",
+                    points: "33",
+                    highestGrade: "S",
+                    id: "23"
             }
-    ]
+        ]
     },
         {
             name: "Wesley Rogers",
@@ -63,11 +79,23 @@ validInputs.createDB = function (key) {
                     points: "55",
                     highestGrade: "B",
                     id: "21"
-            }
-    ]
-    }
-                                          ]).run().then(function(result){
+                },
+                {
+                    name: "Nocturne",
+                    level: "5",
+                    points: "33",
+                    highestGrade: "S",
+                    id: "23"
+                },
+                {
+                    name: "Lucian",
+                    level: "3",
+                    points: "55",
+                    highestGrade: "B",
+                    id: "22"
+                }
+            ]
+        }]).run().then(function (result) {
         console.log("we ran!");
     });
-
 };
