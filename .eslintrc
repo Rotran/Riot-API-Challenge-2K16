@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "strict": 0,
+    "max-len": off
+  },
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "expect": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
