@@ -31,9 +31,30 @@ app.get('/data', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
     r.db('LoL').table('Summoners').run().then(function (data) {
         console.log(data);
+        //When sending actual data, don't use stringify!!
         res.send(JSON.stringify({
             "results": data
         }, null, 4));
+    });
+});
+
+//Gathers the data from our database
+app.get('/temp', function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+
+    fs.readFile('public/../players.json', 'utf8', function(err, data){
+        if(err){
+            throw err;
+        }
+        var parsed = JSON.parse(data);
+
+        for(var i=0; i < parsed['Players'].length; i++){
+            var j = parsed['Players'][i];
+            console.log('Player: ' + j['Player']);
+            res.write("Player: ")
+        }
+
+        //res.send(parsed);
     });
 });
 

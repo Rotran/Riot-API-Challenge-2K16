@@ -1,0 +1,639 @@
+{
+  "Players": [
+    {
+      "Player": "LOD",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Seraph",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Adrian",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Airwaks",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Amazing",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Aphromoo",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Apollo",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Balls",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Betsy",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Bjergsen",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Cabochard",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Crumbzz",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "DontMashMe",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Doublelift",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Eika",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Emperor",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Febiven",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Fenix",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Forg1ven",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Fox",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Fredy122",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Gamsu",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Gate",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "GBM",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Gilius",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Hauntzer",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Hjärnan",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Huhi",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Huni",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Hybrid",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Hylissang",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Jankos",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Jensen",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "KaSing",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Kikis",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Kirei",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "KiWiKiD",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Kobbe",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "KonKwon",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Lourlo",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Mithy",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "MrRalleZ",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Nisbeth",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Nukeduck",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Odoamne",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Perkz",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Piglet",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Pobelter",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "ReignOver",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Rekkles",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Rush",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Sencux",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Shiphtur",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Shook",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Sneaky",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "sOAZ",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Spirit",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Sprattel",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Steeelback",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Steve",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Stixxay",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Svenskeren",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Trashy",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Trick",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Vander",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Vizicsacsi",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Wildturtle",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Wunderwear",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Xmithie",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "xPePii",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "YellOwStaR",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "ZionSpartan",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Zven",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Dardoch",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Impact",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Matt",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Moon",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Altec",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "BIG",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "BillyBoss",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "G0DFRED",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Hai",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "KEITH",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Freeze",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Pirean",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "PowerOfEvil",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Procxin",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Adryh",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Alex Ich",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Atom",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Feng",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Hard",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Froggen",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Hakuho",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "kfo",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Ryu",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Tabzz",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "betongJocke",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Klaj",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "RF Legendary",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "extinkt",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "loulex",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Remi",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Rudy",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Safir",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "SELFIE",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "goldenglue",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Solo",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Diamondprox",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Edward",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "ExecutionerKen",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "k0u",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Ninja",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "SONSTAR",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Wisdom",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "beibei",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Flaresz",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Grigne",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "xPeke",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Bunny FuFuu",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Djoko",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Hustlin",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Cris",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "IWillDominate",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Ohq",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Shrimp",
+      "ID": "null",
+      "Team": "null"
+    },
+    {
+      "Player": "Smoothie",
+      "ID": "null",
+      "Team": "null"
+    }
+  ]
+}
