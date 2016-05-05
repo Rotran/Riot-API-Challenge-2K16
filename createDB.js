@@ -52,7 +52,8 @@ validInputs.createDB = function (key) {
                     id: "22",
                     chest: true,
                     lastPlayTime: 444444,
-                    championPointsUntilNextLevel: 123
+                    championPointsUntilNextLevel: 123,
+                    championPointsSinceLastLevel: 44
             },
                 {
                     name: "Annie",
@@ -62,7 +63,8 @@ validInputs.createDB = function (key) {
                     id: "21",
                     chest: false,
                     lastPlayTime: 23234,
-                    championPointsUntilNextLevel: 44
+                    championPointsUntilNextLevel: 44,
+                    championPointsSinceLastLevel: 44
             },
                 {
                     name: "Nocturne",
@@ -72,7 +74,8 @@ validInputs.createDB = function (key) {
                     id: "23",
                     chest: true,
                     lastPlayTime: 1343434,
-                    championPointsUntilNextLevel: 444
+                    championPointsUntilNextLevel: 444,
+                    championPointsSinceLastLevel: 44
             }
         ]
     },
@@ -90,7 +93,8 @@ validInputs.createDB = function (key) {
                     id: "21",
                     chest: true,
                     lastPlayTime: 1343434,
-                    championPointsUntilNextLevel: 444
+                    championPointsUntilNextLevel: 444,
+                    championPointsSinceLastLevel: 44
                 },
                 {
                     name: "Nocturne",
@@ -100,7 +104,8 @@ validInputs.createDB = function (key) {
                     id: "23",
                     chest: false,
                     lastPlayTime: 1343434,
-                    championPointsUntilNextLevel: 444
+                    championPointsUntilNextLevel: 444,
+                    championPointsSinceLastLevel: 44
                 },
                 {
                     name: "Lucian",
@@ -110,7 +115,8 @@ validInputs.createDB = function (key) {
                     id: "22",
                     chest: true,
                     lastPlayTime: 1343434,
-                    championPointsUntilNextLevel: 444
+                    championPointsUntilNextLevel: 444,
+                    championPointsSinceLastLevel: 44
                 }
             ]
         }]).run().then(function (result) {
