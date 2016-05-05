@@ -3,5 +3,5 @@ import { render } from 'react-dom';
 import SummonerSearch from 'components/SummonerSearch';
 
 render(
-  (<div><SummonerSearch /></div> ), document.getElementById('app')
+  (<div><SummonerSearch /></div>), document.getElementById('app')
 );
