@@ -49,21 +49,30 @@ validInputs.createDB = function (key) {
                     level: "3",
                     points: "55",
                     highestGrade: "B",
-                    id: "22"
+                    id: "22",
+                    chest: true,
+                    lastPlayTime: 444444,
+                    championPointsUntilNextLevel: 123
             },
                 {
                     name: "Annie",
                     level: "2",
                     points: "22",
                     highestGrade: "C+",
-                    id: "21"
+                    id: "21",
+                    chest: false,
+                    lastPlayTime: 23234,
+                    championPointsUntilNextLevel: 44
             },
                 {
                     name: "Nocturne",
                     level: "5",
                     points: "33",
                     highestGrade: "S",
-                    id: "23"
+                    id: "23",
+                    chest: true,
+                    lastPlayTime: 1343434,
+                    championPointsUntilNextLevel: 444
             }
         ]
     },
@@ -78,21 +87,30 @@ validInputs.createDB = function (key) {
                     level: "3",
                     points: "55",
                     highestGrade: "B",
-                    id: "21"
+                    id: "21",
+                    chest: true,
+                    lastPlayTime: 1343434,
+                    championPointsUntilNextLevel: 444
                 },
                 {
                     name: "Nocturne",
                     level: "5",
                     points: "33",
                     highestGrade: "S",
-                    id: "23"
+                    id: "23",
+                    chest: false,
+                    lastPlayTime: 1343434,
+                    championPointsUntilNextLevel: 444
                 },
                 {
                     name: "Lucian",
                     level: "3",
                     points: "55",
                     highestGrade: "B",
-                    id: "22"
+                    id: "22",
+                    chest: true,
+                    lastPlayTime: 1343434,
+                    championPointsUntilNextLevel: 444
                 }
             ]
         }]).run().then(function (result) {
