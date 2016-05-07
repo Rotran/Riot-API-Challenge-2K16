@@ -10,7 +10,7 @@ validInputs.input = ['createDB', 'install'];
 var input = {
     properties: {
         action: {
-            message: "Enter what you would like to do",
+            message: "Enter what you would like to do, createDB or install. Max use Install!!",
             required: true
         }
     }
