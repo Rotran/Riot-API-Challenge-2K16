@@ -60,6 +60,9 @@ app.get('/temp', function (req, res) {
 });
 
 //Call Riot's API and gather the users Data
+//To call, do: http:localhost:$(port)/User/Varleghan
+//http:localhost:$(port)/user/Xian Shroud
+//
 app.get('/user/:name', function (req, res) {
     var name = req.params.name;
     var id = '';
@@ -69,7 +72,10 @@ app.get('/user/:name', function (req, res) {
         response, body) {
         var j = JSON.parse(body);
         console.log(j);
-        id = j[req.params.name.toLowerCase()]['id'];
+        var name_no_space = req.params.name.toLowerCase();
+        name_no_space = name_no_space.replace(' ', '');
+        console.log('updated name: ' + name_no_space);
+        id = j[name_no_space]['id'];
         console.log('id: ' + id);
         request.get("https://na.api.pvp.net/championmastery/location/NA1/player/" + id + "/topchampions?api_key=" + key, function (data, respone, body) {
             console.log('we got the data duude \n' + data);
