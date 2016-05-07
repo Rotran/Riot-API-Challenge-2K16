@@ -48,9 +48,9 @@ app.get('/temp', function (req, res) {
         }
         var parsed = JSON.parse(data);
         var payload = '';
-        console.log(parsed['Players'][5]['Player']);
-        for (var i = 0; i < parsed['Players'].length; i++) {
-            var j = parsed['Players'][i];
+        console.log(parsed['LCS'][1]['Player']);
+        for (var i = 0; i < parsed['LCS'].length; i++) {
+            var j = parsed['LCS'][i];
             console.log('Player: ' + j['Player']);
             payload += j['Player'] + ', ';
         }
@@ -62,15 +62,32 @@ app.get('/temp', function (req, res) {
 //Call Riot's API and gather the users Data
 app.get('/user/:name', function (req, res) {
     var name = req.params.name;
+    var id = '';
     console.log("getting user " + req.params.name);
     res.setHeader('Content-Type', 'application/json');
     request.get("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/" + name + "?api_key=" + key, function (data,
         response, body) {
-        res.send(JSON.parse(body));
+        var j = JSON.parse(body);
+        console.log(j);
+        id = j[req.params.name.toLowerCase()]['id'];
+        console.log('id: ' + id);
+        request.get("https://na.api.pvp.net/championmastery/location/NA1/player/" + id + "/topchampions?api_key=" + key, function (data, respone, body) {
+            console.log('we got the data duude \n' + data);
+            console.log(body);
+            res.send(JSON.parse(body));
+        });
     }).on("error", function (e) {
         console.log("Error: " + e.message);
     });
 });
+
+function getbyID(id) {
+    request.get("https://na.api.pvp.net/championmastery/location/NA1/player/" + id + "/topchampions?api_key=" + key, function (data, respone, body) {
+        console.log('we got the data duude');
+        console.log(body);
+        res.send(JSON.parse(body));
+    });
+}
 
 
 app.listen(3000, function () {
