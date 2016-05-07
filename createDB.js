@@ -1,16 +1,14 @@
 var r = require('rethinkdbdash')();
 var request = require("request");
 var prompt = require('prompt');
+var fs = require('fs');
 var validInputs = {};
+var key = '';
 
 validInputs.input = ['createDB'];
 
 var input = {
     properties: {
-        key: {
-            message: "Please enter api key: ",
-            required: true
-        },
         action: {
             message: "Enter what you would like to do",
             required: true
@@ -22,7 +20,11 @@ prompt.get(input, function (err, result) {
     if (err) {
         console.log(err);
     }
-    var key = result.key;
+
+    fs.readFile('key.config', 'utf8', function(err, data){
+        key = data;
+    });
+
     console.log('got: ' + result['action']);
     if (result.action == "createDB") {
         var act = result['action'];
