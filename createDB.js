@@ -5,7 +5,7 @@ var fs = require('fs');
 var validInputs = {};
 var key = '';
 
-validInputs.input = ['createDB'];
+validInputs.input = ['createDB', 'install'];
 
 var input = {
     properties: {
@@ -21,19 +21,50 @@ prompt.get(input, function (err, result) {
         console.log(err);
     }
 
-    fs.readFile('key.config', 'utf8', function(err, data){
+    fs.readFile('key.config', 'utf8', function (err, data) {
         key = data;
     });
-
+    var act = result['action'];
     console.log('got: ' + result['action']);
     if (result.action == "createDB") {
-        var act = result['action'];
         validInputs[act](key);
+    } else if (result.action == 'install') {
+        validInputs[act]();
     }
     //do api calls here
 
 
 });
+
+validInputs.install = function () {
+    fs.readFile('public/../players.json', 'utf8', function (err, data) {
+        if (err) {
+            throw err;
+        }
+        var parsed = JSON.parse(data);
+        for (var i = 0; i < parsed['LCS'].length; i++) {
+            var id = parsed['LCS'][i]['ID'];
+            console.log(key + " Sanity: " + parsed['LCS'][0]['Summoner']);
+            request.get("https://na.api.pvp.net/championmastery/location/NA1/player/" + id + "/topchampions?api_key=" + key, function (data, respone, body) {
+                console.log('we got the data duude');
+                console.log(body);
+                //if body is an empty array we should say fuck it
+                //and not update
+                r.db('LoL').table('Summoners').insert({
+                    id: id,
+                    "Summoner": parsed['LCS'][0]['Summoner'], //the i here didin't get carried through wtf
+                    "Player": parsed['LCS'][0]["Player"],
+                    "Team": parsed['LCS'][0]["Team"],
+                    "Champs": JSON.parse(body)
+                }, {
+                    conflict: "replace"
+                }).run().then(function (result) {
+                    console.log("db updated");
+                });
+            });
+        }
+    })
+};
 
 validInputs.createDB = function (key) {
     console.log('Creating db!!');

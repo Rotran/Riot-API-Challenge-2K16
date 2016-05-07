@@ -1,33 +1,9 @@
 {
     "LCS": [
         {
-            "Player": "Bjergsen",
-            "Summoner": "mid lane banter",
-            "ID": "73489352",
-            "Team": "Team SoloMid"
-        },
-        {
-            "Player": "Doublelift",
-            "Summoner": "clgna doublelift",
-            "ID": "75242164",
-            "Team": "Team SoloMid"
-        },
-        {
             "Player": "Valkrin",
             "Summoner": "Chewy is god",
             "ID": "21337269",
-            "Team": "Team SoloMid"
-        },
-        {
-            "Player": "Hauntzer",
-            "Summoner": "Pro Hauntzer",
-            "ID": "72580816",
-            "Team": "Team SoloMid"
-        },
-        {
-            "Player": "YellOwStaR",
-            "Summoner": "NerfGun5",
-            "ID": "47429161",
             "Team": "Team SoloMid"
         }
     ]

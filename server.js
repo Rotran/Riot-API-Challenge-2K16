@@ -72,8 +72,12 @@ app.get('/user/:name', function (req, res) {
         response, body) {
         var j = JSON.parse(body);
         console.log(j);
-        var name_no_space = req.params.name.toLowerCase();
-        name_no_space = name_no_space.replace(' ', '');
+        var splits = req.params.name.toLowerCase().split(' ');
+        var name_no_space = '';
+        for (var i = 0; i < splits.length; i++) {
+            name_no_space += splits[i];
+        }
+
         console.log('updated name: ' + name_no_space);
         id = j[name_no_space]['id'];
         console.log('id: ' + id);
