@@ -1,5 +1,5 @@
 import React from 'react';
-import ChampionIcon from 'components/ChampionIcon';
+import ChampionIcon from './ChampionIcon';
 import moment from 'moment';
 
 const SummonerDetails = () => {

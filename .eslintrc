@@ -6,17 +6,19 @@
     "max-len": off
   },
   "plugins": [
+    "babel",
+    "import",
     "react"
   ],
-  "env": {
-    "mocha": true
+  "settings" : {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
   },
   "globals": {
-    "expect": true
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
+    "chai": true,
+    "sinon": true
   }
 }

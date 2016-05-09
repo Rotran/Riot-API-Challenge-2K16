@@ -1,7 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
-import SummonerSearch from 'components/SummonerSearch';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from './reducers';
+import App from './components/App';
+
+let store = createStore(reducers);
 
 render(
-  (<div><SummonerSearch /></div>), document.getElementById('app')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
 );
