@@ -44,27 +44,54 @@ validInputs.install = function () {
         var parsed = JSON.parse(data);
         for (var i = 0; i < parsed['LCS'].length; i++) {
             var id = parsed['LCS'][i]['ID'];
-            console.log(key + " Sanity: " + parsed['LCS'][0]['Summoner']);
-            request.get("https://na.api.pvp.net/championmastery/location/NA1/player/" + id + "/topchampions?api_key=" + key, function (data, respone, body) {
-                console.log('we got the data duude');
-                console.log(body);
-                //if body is an empty array we should say fuck it
-                //and not update
-                r.db('LoL').table('Summoners').insert({
-                    id: id,
-                    "Summoner": parsed['LCS'][0]['Summoner'], //the i here didin't get carried through wtf
-                    "Player": parsed['LCS'][0]["Player"],
-                    "Team": parsed['LCS'][0]["Team"],
-                    "Champs": JSON.parse(body)
-                }, {
-                    conflict: "replace"
-                }).run().then(function (result) {
-                    console.log("db updated");
-                });
-            });
+//            if(i % 2 === 0){
+//                console.log('waiting i: ' + i);
+//                wait(i);
+////                setTimeout(function(){
+////                    console.log('i: ', i);
+////                }, 1000 + (1000 * i));
+//            }
+//            else{
+//                console.log('i: ', i);
+//            }
+//            console.log(',,,,' + i);
+            req(id, i, parsed);
         }
-    })
+    });
 };
+
+function wait(ii){
+    var self = this;
+    self.i = ii;
+    self.do = function(self){console.log("we be doing " + this.ii);}
+    console.log('self i: ' + self.i);
+    setTimeout(self.do, 1000);
+
+//    setTimeout(() =>{
+//    setTimeout(function(ii)){
+//        console.log('i: ' + ii);
+//    }, 3000 + (1000 * i));
+}
+
+function req(id, ii, parsed) {
+    request.get("https://na.api.pvp.net/championmastery/location/NA1/player/" + id + "/topchampions?api_key=" + key, function (data, respone, body) {
+        console.log('Inserting: (conflicts will replace)');
+        console.log(body);
+        //if body is an empty array we should say fuck it
+        //and not update
+        r.db('LoL').table('Summoners').insert({
+            id: id,
+            "Summoner": parsed['LCS'][ii]['Summoner'], //the i here didin't get carried through wtf
+            "Player": parsed['LCS'][ii]["Player"],
+            "Team": parsed['LCS'][ii]["Team"],
+            "Champs": JSON.parse(body)
+        }, {
+            conflict: "replace"
+        }).run().then(function (result) {
+            console.log(id + " db updated, " + ii);
+        });
+    });
+}
 
 validInputs.createDB = function (key) {
     console.log('Creating db!!');
